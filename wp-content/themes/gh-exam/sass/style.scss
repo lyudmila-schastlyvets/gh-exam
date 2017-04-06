@@ -23,7 +23,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# Normalize
 # Typography
 # Elements
 # Forms
@@ -46,19 +45,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "mixins/mixins-master";
 
 /*--------------------------------------------------------------
-# Normalize
---------------------------------------------------------------*/
-@import "normalize";
-
-/*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
 @import "typography/typography";
 
-/*--------------------------------------------------------------
-# Elements
---------------------------------------------------------------*/
-@import "elements/elements";
 
 /*--------------------------------------------------------------
 # Forms
@@ -104,3 +94,40 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 --------------------------------------------------------------*/
 @import "media/media";
+
+
+/*--------------------------------------------------------------
+# Base, reset and fonts
+--------------------------------------------------------------*/
+@import "base/reset";
+@import "base/base";
+@import "base/fonts";
+
+/*--------------------------------------------------------------
+# Pages
+--------------------------------------------------------------*/
+@import "pages/homepage/hero";
+@import "pages/homepage/about";
+@import "pages/homepage/services";
+@import "pages/homepage/testimonials";
+@import "pages/homepage/news";
+@import "pages/homepage/partners";
+@import "pages/homepage/portfolio";
+
+@import "pages/blog";
+@import "pages/single-post";
+
+/*--------------------------------------------------------------
+# Layouts
+--------------------------------------------------------------*/
+
+@import "layout/header";
+@import "layout/footer";
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+
+@import "elements/carousel";
+@import "elements/social-links";
+@import "elements/buttons";
