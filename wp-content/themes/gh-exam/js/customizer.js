@@ -44,4 +44,29 @@
 			false === to ? $( '.contact-us-section' ).hide() : $( '.contact-us-section' ).show();
 		} );
 	} );
+	wp.customize( 'hero_section_show', function( value ) {
+		value.bind( function( to ) {
+			false === to ? $( '.contact-us-section' ).hide() : $( '.contact-us-section' ).show();
+		} );
+	} );
+	wp.customize( 'hero_section_show', function( value ) {
+		value.bind( function( to ) {
+			false === to ? $( '.hero' ).hide() : $( '.hero' ).show();
+		} );
+	} );
+	wp.customize( 'hero_section_show', function( value ) {
+		value.bind( function( to ) {
+			false === to ? $( '.hero' ).hide() : $( '.hero' ).show();
+		} );
+	} );
+	wp.customize( 'services_section_show', function( value ) {
+		value.bind( function( to ) {
+			false === to ? $( '.services-section-homepage' ).hide() : $( '.services-section-homepage' ).show();
+		} );
+	} );
+	wp.customize( 'about_us_section_show', function( value ) {
+		value.bind( function( to ) {
+			false === to ? $( '.about-us-section-homepage' ).hide() : $( '.about-us-section-homepage' ).show();
+		} );
+	} );
 } )( jQuery );

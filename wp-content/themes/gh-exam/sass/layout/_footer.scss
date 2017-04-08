@@ -42,10 +42,23 @@
     margin-bottom: 38px;
   }
 
+  .section-subtitle {
+    margin-bottom: 30px;
+  }
+
   .section-header {
     .widget {
       padding: 0;
       background-color: transparent;
+    }
+  }
+
+  .site-phone-number,
+  .site-phone-address {
+    margin-bottom: 20px;
+    .fa {
+      min-width: 260px;
+      margin-right: 20px;
     }
   }
 

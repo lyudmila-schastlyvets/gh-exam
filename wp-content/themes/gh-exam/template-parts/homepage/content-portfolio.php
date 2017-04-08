@@ -46,7 +46,7 @@
                         <div class="overlay">
                             <div class="overlay-border">
                                 <div class="content">
-                                    <h3 class="overlay-title"><?php ?></h3>
+                                    <h3 class="overlay-title"><?php the_title();?></h3>
                                 </div>
                             </div>
                         </div>

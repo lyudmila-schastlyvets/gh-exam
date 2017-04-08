@@ -7,3 +7,39 @@
   font: 700 30px/30px $main-font;
   text-transform: uppercase;
 }
+
+.search-submit {
+  display: none;
+}
+
+.widget_search {
+  .widget-title {
+    margin-bottom: 30px;
+  }
+  label {
+    width: 100%;
+    span {
+      display: block;
+      width: 100%;
+    }
+  }
+  .search-field {
+    width: 100%;
+  }
+}
+
+.widget-text {
+  form {
+    input[type="email"] {
+      width: 100%;
+    }
+    .newsletter-btn {
+      width:290px;
+      background-color: #ff4848;
+      border: 1px solid white;
+      color: white;
+      font: 700 24px/24px $main-font;
+      text-transform: uppercase;
+    }
+  }
+}
