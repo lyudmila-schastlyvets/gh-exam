@@ -1,0 +1,40 @@
+.gh-exam-pagination {
+  padding: 60px 0;
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    margin-left: 16px;
+    font: 700 24px/45px $main-font;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &.active,
+    &:hover {
+      a {
+        color: black;
+      }
+    }
+
+    a {
+      display: block;
+      min-width: 45px;
+      height: 45px;
+      padding: 0 10px;
+      color: white;
+      background-color: #ff4848;
+      transition: 400ms;
+      &:hover {
+        color: black;
+        text-decoration: none;
+      }
+    }
+  }
+}

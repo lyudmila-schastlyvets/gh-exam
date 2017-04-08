@@ -15,42 +15,51 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<section class="header-section"><div class="container"><h2 class="page-title"><?php the_field('main-idea', get_option('page_for_posts')); ?></h2></div></section>
+		<section class="post-section">
+		<div class="container">
+			<div class="">
+				<main id="main" class="row site-main col-lg-8" role="main">
 
-		<?php
-		if ( have_posts() ) :
-
-			if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
 
 			<?php
-			endif;
+			if ( have_posts() ) :
 
-			/* Start the Loop */
-			while ( have_posts() ) : the_post();
+				if ( is_home() && ! is_front_page() ) : ?>
+					<header>
+						<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+					</header>
 
-				/*
-				 * Include the Post-Format-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_format() );
+				<?php
+				endif;
 
-			endwhile;
+				while ( have_posts() ) : the_post();
 
-			the_posts_navigation();
+					get_template_part( 'template-parts/content', get_post_format() );
 
-		else :
+				endwhile; ?>
 
-			get_template_part( 'template-parts/content', 'none' );
+				<?php if (function_exists("custom_numeric_posts_nav")) :
+					custom_numeric_posts_nav();
+				endif; ?> <!-- Pagination -->
 
-		endif; ?>
+			<?php else :
 
-		</main><!-- #main -->
+				get_template_part( 'template-parts/content', 'none' );
+
+			endif; ?>
+				</main><!-- #main -->
+				<aside class="sidebar-blog col-lg-4">
+					<?php
+					dynamic_sidebar('sidebar-4');
+					dynamic_sidebar('sidebar-5');
+					dynamic_sidebar('sidebar-6');?>
+
+				</aside>
+			</div>
+		</div>
+		</section>
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();

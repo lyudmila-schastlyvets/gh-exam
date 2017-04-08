@@ -1,0 +1,83 @@
+.copyright-section {
+  padding: 30px 0;
+  background-color: $red-shades-color;
+  color: white;
+  font: 300 18px/24px $main-font;
+  .container {
+    text-align: center;
+  }
+}
+
+.footer-logo-section {
+  padding: 50px 0 38px;
+  background-color: #17212a;
+  .site-title {
+    text-align: center;
+  }
+}
+
+.clients-section {
+  padding: 62px 0 90px;
+  background-color: $red-shades-color;
+  color: white;
+
+  .section-title {
+    margin-bottom: 70px;
+  }
+
+  .clients-list {
+    display: flex;
+  }
+  .single-client {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.contact-us-section {
+  padding-top: 110px;
+  color: white;
+  .section-title {
+    text-align: left;
+    margin-bottom: 38px;
+  }
+
+  .section-header {
+    .widget {
+      padding: 0;
+      background-color: transparent;
+    }
+  }
+
+  .content {
+    .widget {
+      padding: 0;
+      background-color: transparent;
+    }
+  }
+  form {
+    span {
+      display: block;
+      width: 100%;
+      input, textarea {
+        width: 100%;
+        padding: 24px;
+        background-color: #f4f4f4;
+        color: #777;
+        font: 300 18px/24px $main-font;
+      }
+    }
+    input[type="submit"] {
+      width: 182px;
+      background-color: #ff4848;
+      color: white;
+      font: 700 24px/24px $main-font;
+      text-transform: uppercase;
+      border: none;
+      transition: 400ms;
+      &:hover {
+        color: black;
+      }
+    }
+  }
+}

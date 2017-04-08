@@ -1,5 +1,43 @@
 .hero {
+  background-color: $red-shades-color;
+  padding: 100px 0 40px;
+  .hero-image {
+    img {
+      max-width: 100%;
+    }
 
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    @media only screen and (min-width: 768px) {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  .hero-content {
+    color: white;
+  }
+
+  .main-site-title {
+    margin-bottom: 40px;
+    font: 700 60px/60px $main-font;
+    text-align: left;
+  }
+  .main-section-subtitle {
+    margin-bottom: 10px;
+    font: 400 48px/50px $main-font;
+  }
+  .main-section-taglines {
+    margin-bottom: 44px;
+    font: 400 30px/36px $main-font;
+  }
+  .main-section-info {
+    font: 300 24px/28px $main-font;
+  }
 }
 
 @media only screen and (min-width: 400px) {

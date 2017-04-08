@@ -1,5 +1,9 @@
-$main-font: "Open Sans", sans-serif;
+$main-font: "Roboto", sans-serif;
 $secondary_font: "Georgia", sans-serif;
+
+$main-color: #004966;
+$red-shades-color: #ff4848;
+$dark-blue-color: #17212a;
 
 body {
   background-color: #fff;
@@ -24,12 +28,18 @@ a {
   }
 }
 
+h2 {
+  color: white;
+  font: 300 36px/36px $main-font;
+  text-align: center;
+}
+
 h3 {
 
 }
 
 p {
-
+  font: 300  18px/24px $main-font;
 }
 
 input,
@@ -42,14 +52,16 @@ textarea {
   resize: none;
 }
 
-.section {
-
-}
-
 .section-title {
-
+  color: white;
+  font: 300 36px/24px $main-font;
 }
 
 .section-subtitle {
+  color: white;
+  font: 400 18px/24px $main-font;
+}
 
+.site-content {
+  padding-top: 90px;
 }

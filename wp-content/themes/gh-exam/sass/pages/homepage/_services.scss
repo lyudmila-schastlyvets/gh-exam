@@ -1,8 +1,41 @@
 .services-section-homepage {
+  padding: 100px 0 90px;
+  background-color: #004966;
+  color: white;
+
+  .section-header {
+    margin-bottom: 96px;
+  }
+
+  .section-title {
+    margin-bottom: 30px;
+  }
+
+  .section-description {
+    max-width: 908px;
+    font: 400 18px/24px $main-font;
+    text-align: center;
+  }
+
+  .service-image {
+    height: 133px;
+    margin-bottom: 50px;
+  }
 
 }
 
 .features-list {
+  .feature {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .feature-title {
+    margin-bottom: 15px;
+    font: 700 30px/24px $main-font;
+  }
 
 }
 

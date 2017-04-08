@@ -39,4 +39,9 @@
 			}
 		} );
 	} );
+	wp.customize( 'contact_section_show', function( value ) {
+		value.bind( function( to ) {
+			false === to ? $( '.contact-us-section' ).hide() : $( '.contact-us-section' ).show();
+		} );
+	} );
 } )( jQuery );

@@ -1,5 +1,25 @@
 .about-us-section-homepage {
+  padding-top: 56px;
 
+  .about-image {
+    max-width: 100%;
+  }
+
+  .about-us-section-content {
+    padding: 120px 0 100px;
+  }
+  .about-us-title {
+    margin-bottom: 48px;
+    color: #004966;
+    font: 700 36px/40px $main-font;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  .about-content {
+    color: #004966;
+    font: 300 18px/24px $main-font;
+  }
 }
 
 @media only screen and (min-width: 400px) {
